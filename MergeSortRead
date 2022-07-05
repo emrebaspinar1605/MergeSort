@@ -1,0 +1,14 @@
+Merge Sort
+
+  [16,21,11,8,12,22] //iki parçaya ayırıyoruz
+  [16,21,11] [8,12,22] //bunlarıda kendi içinde bölüyoruz
+  [16,21] [11]   [8,12] [22] //En son Hepsini bit olarak ayırıyoruz
+  [16] [21] [11]   [8] [12] [22] // Artık sıralama zamanı
+  [16,21] [11]    [8,12] [22]// hepsini dizi olarak sayarsak a[0]=16 , b[0]=11 eğer a 0 b 0 dan büyükse ilke onu yaz ve a1 ile b 0 ı karşılaştır
+  [11,16,21]   [8,12,22]// Şimdi a 0 > b0 // a0 <b1 // b1<a1 // a1<b2 //b2 >a2 sonucu sıralaması
+  [8,11,12,16,21,22] // b0,a0,b1,a1,a2,b2
+   
+   
+   
+   Big-O gösterimi
+      O(nlogn)
